@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
+    <!--adiciona ícone de favoritos-->
+    <link rel="shortcut icon" href="img/favicon-netflix/favicon.ico" type="image/x-icon">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
@@ -21,10 +24,10 @@
         <div class="container"> <!--1ª caixa-->
             <h2 class="logo">NETFLIX</h2>
             <NAV> <!--tag semântiga para menus de navegação-->
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="https://www.netflix.com/br/">Início</a>
+                <a href="https://www.netflix.com/br/browse/genre/83">Séries</a>
+                <a href="http://www.adorocinema.com/noticias/filmes/noticia-152743/" target="_blank" rel="external">Dicas de filmes</a>
+                <a href="https://www.netflix.com/br/browse/genre/6839">Documentários</a>
             </NAV> 
         </div>
     </header>
@@ -33,16 +36,20 @@
         <div class="filme-principal">
             <div class="container"> <!--filho de filme-principal-->
                 <h3 class="titulo">THIS IS US</h3>
-                <p class="descricao">This is Us segue um grupo de pessoas únicas e as formas como os seus caminhos cruzam e histórias de vida se cruzam maneiras inesperadas: desde partilharem o mesmo dia de aniversário a muito mais, formas impensáveis. Assista agora a nova temporada de This Is Us que está imperdível.</p>
+                <p class="descricao">A série é uma crônica sobre a relação de um grupo de pessoas que nasceram no mesmo dia: Rebecca (Mandy Moore), Jack (Milo Ventimiglia), um casal esperando trigêmeos em Pittsburgh e Kevin (Justin Hartley), um belo ator de televisão que está cansado da vida de solteirão cobiçado.</p>
                 <div class="botoes"> 
-                    <button role="button" class="botao"> 
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
+                    <a href="pag2.html">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </a>
+                    <a href="http://www.adorocinema.com/series/serie-19992/" target="_blank" rel="external">
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </a>
                     <!--quando estamos em um elemento desktop, é muito claro para o navegador que "button"" é um botão; mas para alguns sistemas operacionais mobile, ou quando você utiliza tablet, é importante identificar qual é a função do botão. Nesse caso, deixamos claro que, independente de onde ele estiver renderizando, sua função é "botão" com a propriedade "role"-->
                 </div> <!--Toda vez que você cria uma div ela vem, por padrão, com o display block-->
             </div> 
@@ -52,38 +59,45 @@
     <div class="carrosel-filmes">
         <div class="owl-carousel oel-theme">
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini1.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini1.jpg" alt="foto do ator Milo Ventimiglia" title="Milo Ventimiglia como Jack Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini2.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini2.jpg" alt="foto da atriz Mandy Moore" title="Mandy Moore como Rebecca Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini3.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini3.jpg" alt="foto do ator Sterling K. Brown" title="Sterling K. Brown como Randall Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini4.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini4.jpg" alt="foto da atriz Chrissy Metz" title="Chrissy Metz como Kate Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini5.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini5.jpg" alt="foto do ator Justin Hartley" title="Justin Hartley como Kevin Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini6.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini6.jpg" alt="foto da atriz Susan Kelechi Watson" title="Susan Kelechi Watson como Beth Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini7.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini7.jpg" alt="foto do ator Chris Sullivan" title="Chris Sullivan como Toby Damon">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini8.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini8.jpg" alt="foto da atriz Eris Baker" title="Eris Baker como Tess Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini9.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini9.jpg" alt="foto da atriz Faithe Herman" title="Faithe Herman como Annie Pearson">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/carrosel/mini10.jpg" alt="">
+                    <img class="box-filme" src="img/carrosel/mini10.jpg" alt="foto do ator Ron Cephas Jones" title="Ron Cephas Jones como William Hill">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini11.jpg" alt="foto da atriz Lyric Ross" title="Lyric Ross como Deja">
                 </div>
 
         </div>
     </div>
+
+    <footer>
+        <p>Essa página é resultado do desafio Recriando a Interface do Netflix, do Bootcamp HTML Web Developer da <abbr title="Digital Innovation One">DIO</abbr>. <br> Desenvolvida por <strong>Lorena Lobo</strong>.</p>
+    </footer>
 
     <script src="https://kit.fontawesome.com/9bd45141dd.js" crossorigin="anonymous"></script> <!--referência de ícones-->
     <script src="js/owl/jquery.min.js"></script>
