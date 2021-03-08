@@ -110,15 +110,6 @@ header nav a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
     margin-top: 5px;
 }
 
-.botoes a{
-    text-decoration: none;
-    color: white;
-}
-
-main .botoes a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
-    color: black;
-}
-
 footer{
     text-align: center;
     font-family:serif;
