@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+
+    <header>
+        <div class="container"> <!--1ª caixa-->
+            <h2 class="logo">NETFLIX</h2>
+            <NAV> <!--tag semântiga para menus de navegação-->
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </NAV> 
+        </div>
+    </header>
+
+    <main> <!--main é uma div com conceito semântico; não faz dirença para quem está programando, mas faz para as ferramentas de SEO-->
+        <div class="filme-principal">
+            <div class="container"> <!--filho de filme-principal-->
+                <h3 class="titulo">THIS IS US</h3>
+                <p class="descricao">This is Us segue um grupo de pessoas únicas e as formas como os seus caminhos cruzam e histórias de vida se cruzam maneiras inesperadas: desde partilharem o mesmo dia de aniversário a muito mais, formas impensáveis. Assista agora a nova temporada de This Is Us que está imperdível.</p>
+                <div class="botoes"> 
+                    <button role="button" class="botao"> 
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <!--quando estamos em um elemento desktop, é muito claro para o navegador que "button"" é um botão; mas para alguns sistemas operacionais mobile, ou quando você utiliza tablet, é importante identificar qual é a função do botão. Nesse caso, deixamos claro que, independente de onde ele estiver renderizando, sua função é "botão" com a propriedade "role"-->
+                </div> <!--Toda vez que você cria uma div ela vem, por padrão, com o display block-->
+            </div> 
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel oel-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/carrosel/mini10.jpg" alt="">
+                </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9bd45141dd.js" crossorigin="anonymous"></script> <!--referência de ícones-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+</body>
+</html>

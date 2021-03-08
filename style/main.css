@@ -1,0 +1,111 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+} /*Trabalhando com variáveis dentro do CSS: declarar as cores que serão utilizadas na página da web dentro de uma variável, por exemplo, como fizemos neste caso, é muito interessante porque, se por algum motivo você precisar trocá-la, você só troca em um lugar*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} /*Seletor universal: seleciona todos os elementos da página*/
+
+/*ELEMENTOS BASE*/
+
+body{
+    background:var(--preta);
+    font-family:'Arial', Times, serif;
+    color:white;
+} /*Para editar a cor do meu h3, só precisei editar o boddy. Isso nos ensina, a respeito do CSS, que os filhos herdam toda a formatação que o elemento pai tem. Ou seja, o elemento pai de h3 é o div container, que por sua vez é filho do div filme-principal, que por sua vez é filho do body (todos herdam)*/
+
+/*Seletores: para acessar um elemento, precisamos indicar o caminho completo. Ex. a class container está dentro do header*/
+header .container{ 
+   display:flex;
+   flex-direction:row; /*Flex-direction é uma propriedade que por padrão é "row", independentemente de ser declarada (add por questão de semântica)*/
+   align-items:center; /*alinha os elementos no centro*/
+   justify-content:space-between; /*trabalha o modo como os elementos estão disponibilizados de maneira horizontal entre a 1ª tag filha do container (que é o h2) e a 2ª (que é a NAV)*/
+}
+
+header .logo{ 
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family:'Arial Black';
+    font-size:40px;
+}
+
+header nav a{ 
+    text-decoration:none;
+    color:#AAA;
+    margin-right:10px;
+}
+
+header nav a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
+    color:#fff
+}
+
+/*ELEMENTOS DO FILME PRINCIPAL*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa2.jpg');
+    /*o gradiente sempre pede mais de uma cor como referência; neste caso, usamos a mesma cor (tonalidade de preto) apenas para criar uma camada fina em cima da imagem (transparência) e melhorar o contraste*/
+
+    height:400px;
+    background-size:cover; /*especifica o tamanho da imagem, neste caso, a área de cobertura da caixa*/
+
+    display:flex; /*joga os elementos sempre para o padrão "em linha"*/
+    flex-direction:column; /*muda o padrão "em linha" para "coluna"*/
+    justify-content:center; /*sempre segue a direção do flex-direction*/
+    align-items: flex-start; /*faz com que os elementos comecem da esquerda*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border:none;
+    color:white;
+
+    padding:15px 30px; /*1 valor só = serve para os 4 cantos; 2 valores = 1º valor topo/abaixo; 2º valor laterais*/margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*ao passar o cursor, identifica que é uma parte clicável*/
+    transition: .3s ease all; /*cuida da transição entre uma animação e outra*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{ /*todos os elementos que tem a classe container serão afetados*/
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{ /*só afeta o container que tá dentro de filme-principal*/
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
