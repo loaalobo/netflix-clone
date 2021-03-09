@@ -45,7 +45,7 @@ header nav a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
 /*ELEMENTOS DO FILME PRINCIPAL*/
 .filme-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa2.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/img-background.jpg);
     /*o gradiente sempre pede mais de uma cor como referência; neste caso, usamos a mesma cor (tonalidade de preto) apenas para criar uma camada fina em cima da imagem (transparência) e melhorar o contraste*/
 
     height:400px;
@@ -67,7 +67,6 @@ header nav a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
     font-size: 40px;
     font-family:'Trebuchet MS', Arial, sans-serif;
 }
-
 
 .botao{
     background-color:rgba(0,0,0,.50);
@@ -110,7 +109,12 @@ header nav a:hover{ /*adiciona efeito (muda de cor) ao passar o cursor no link*/
     margin-top: 5px;
 }
 
+.botoes-ancoras{
+    text-decoration: none;
+}
+
 footer{
     text-align: center;
     font-family:serif;
 }
+
